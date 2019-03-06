@@ -1,3 +1,5 @@
+# Define data types here then deploy to prisma to update
+
 type User {
   id: ID! @unique
   name: String!

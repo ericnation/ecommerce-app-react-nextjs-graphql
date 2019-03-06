@@ -1,4 +1,5 @@
 # import * from './generated/prisma.graphql';
+# Public facing API that React front end will interact with
 
 type Mutation {
   createItem(title: String, description: String, price: Int,
