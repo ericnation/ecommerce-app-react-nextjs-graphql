@@ -39,7 +39,7 @@ class Item extends Component {
             <a>EDIT ✏️</a>
           </Link>
           <button>ADD TO CART</button>
-          <DeleteItem>Delete Item</DeleteItem>
+          <DeleteItem id={item.id}>Delete Item</DeleteItem>
         </div>
       </ItemStyles>
     );
