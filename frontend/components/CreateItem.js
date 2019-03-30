@@ -70,7 +70,8 @@ class CreateItem extends Component {
     return (
       <Mutation mutation={CREATE_ITEM_MUTATION} variables={this.state}>
       {(createItem, { loading, error }) => (
-          <Form onSubmit={async (e) => {
+          <Form data-test="form"
+                onSubmit={async (e) => {
             // Stop form from submitting
             e.preventDefault();
             // call the mutation
@@ -88,6 +89,7 @@ class CreateItem extends Component {
               <input
                   type="file"
                   name="file"
+                  id="file"
                   placeholder="Upload an image"
                   required
                   onChange={this.uploadFile}
@@ -100,6 +102,7 @@ class CreateItem extends Component {
               <input
                   type="text"
                   name="title"
+                  id="title"
                   placeholder="Title"
                   required
                   value={this.props.title}
@@ -112,6 +115,7 @@ class CreateItem extends Component {
               <input
                   type="number"
                   name="price"
+                  id="price"
                   placeholder="Price"
                   required
                   value={this.props.price}
@@ -125,6 +129,7 @@ class CreateItem extends Component {
                   name="description"
                   placeholder="Enter a Description"
                   required
+                  id="description"
                   value={this.props.description}
                   onChange={this.handleChange}
                 />

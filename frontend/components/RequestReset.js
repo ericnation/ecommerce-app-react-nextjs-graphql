@@ -31,7 +31,8 @@ class RequestReset extends Component {
               e.preventDefault();
               await reset();
               this.setState({ email: ''})
-            }} method="post">
+            }} method="post"
+              data-test="form">
               <fieldset disabled={loading} aria-busy={loading}>
                 <h2>Request a Reset</h2>
                 <Error error={error} />
@@ -58,3 +59,4 @@ class RequestReset extends Component {
 }
 
 export default RequestReset;
+export { REQUEST_RESET_MUTATION };
