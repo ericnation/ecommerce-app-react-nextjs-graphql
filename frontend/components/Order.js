@@ -43,7 +43,7 @@ class Order extends React.Component {
         if(loading) return <p>Loading...</p>
         const order = data.order;
         return (
-          <OrderStyles>
+          <OrderStyles data-test="order">
             <Head>
               <title>Sick Fits - {order.id}</title>
             </Head>
@@ -91,3 +91,4 @@ class Order extends React.Component {
 }
 
 export default Order;
+export { SINGLE_ORDER_QUERY };
