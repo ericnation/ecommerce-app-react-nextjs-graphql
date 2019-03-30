@@ -6,7 +6,7 @@ const createServer = require('./createServer');
 const db = require('./db');
 
 
-
+// start it
 const server = createServer();
 
 // Send cookies with req
