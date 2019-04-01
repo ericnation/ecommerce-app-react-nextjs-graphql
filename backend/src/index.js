@@ -35,7 +35,9 @@ server.express.use(async (req, res, next) => {
 server.start({
   cors: {
     credentials: true,
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.FRONTEND_URL,
+            'https://sickfits-next-nation-prod.herokuapp.com',
+            'https://sickfits-yoga-nation-prod.herokuapp.com'],
   },
 },
 deets => {
