@@ -20,6 +20,7 @@ const Nav = () => {
             <Link href="/sell">
               <a>Sell</a>
             </Link>
+
             <Link href="/orders">
               <a>Orders</a>
             </Link>
