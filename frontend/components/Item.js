@@ -8,7 +8,7 @@ import formatMoney from '../lib/formatMoney';
 import DeleteItem from './DeleteItem';
 import AddToCart from './AddToCart';
 
-class Item extends Component {
+export default class Item extends Component {
   static propTypes = {
     item: PropTypes.object.isRequired
   };
@@ -46,5 +46,3 @@ class Item extends Component {
     );
   }
 }
-
-export default Item;
